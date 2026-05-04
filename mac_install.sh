@@ -23,7 +23,7 @@ visual-studio-code
 # google-chrome
 iina
 opencode-desktop
-android-studio
+# android-studio
 # 按键显示
 keycastr
 # 腾讯柠檬，一款清理软件
@@ -35,6 +35,8 @@ tencent-lemon
 )
 
 proxy_prefix="https://gh.xmly.dev"
+
+xcode-select --install 2>/dev/null
 
 brew_install() {
   # 用代理下载 最新 Homebrew
@@ -106,5 +108,5 @@ install_flutter() {
   # echo "Flutter $version 安装完成: $flutter_dir"
 }
 
+brew_install
 install_flutter
-# brew_install
