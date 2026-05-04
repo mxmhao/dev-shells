@@ -34,15 +34,17 @@ tencent-lemon
 # privadovpn
 )
 
+proxy_prefix="https://gh.xmly.dev"
 
 brew_install() {
   # 用代理下载 最新 Homebrew
   # https://gh.xmly.dev/https://github.com/Homebrew/brew/releases/latest/download/Homebrew.pkg
   if ! command -v brew &>/dev/null; then
     # 下载并静默安装 Homebrew
-    curl -L# -o /tmp/Homebrew.pkg "https://gh.xmly.dev/https://github.com/Homebrew/brew/releases/latest/download/Homebrew.pkg" \
-      && sudo installer -pkg /tmp/Homebrew.pkg -target /
-    rm -f /tmp/Homebrew.pkg
+    local pkg_path="/tmp/Homebrew.pkg"
+    curl -L# -o $pkg_path "${proxy_prefix}/https://github.com/Homebrew/brew/releases/latest/download/Homebrew.pkg" \
+      && sudo installer -pkg $pkg_path -target /
+    rm -f $pkg_path
   fi
 
   for f in $formulae; do
