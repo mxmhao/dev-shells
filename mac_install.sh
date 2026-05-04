@@ -36,7 +36,6 @@ tencent-lemon
 
 proxy_prefix="https://gh.xmly.dev"
 
-xcode-select --install 2>/dev/null
 
 brew_install() {
   # 用代理下载 最新 Homebrew
@@ -107,6 +106,13 @@ install_flutter() {
   # rm /tmp/flutter.zip
   # echo "Flutter $version 安装完成: $flutter_dir"
 }
+
+if [ ! -d "/Applications/Xcode.app" ]; then
+  echo "Xcode 未安装，请先从 App Store 安装 Xcode"
+  
+  install_flutter
+  return
+fi
 
 brew_install
 install_flutter
