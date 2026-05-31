@@ -25,7 +25,7 @@ export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/plat
 eval $(/opt/homebrew/bin/brew shellenv) #ckbrew
 
 # flutter
-export FLUTTER_HOME=~/dev/sdks/flutter
+export FLUTTER_HOME=~/develop/sdks/flutter
 export PATH=$PATH:$FLUTTER_HOME/bin
 export PUB_HOSTED_URL=https://pub.flutter-io.cn
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
@@ -35,4 +35,4 @@ export RUSTUP_DIST_SERVER="https://rsproxy.cn"
 export RUSTUP_UPDATE_ROOT="https://rsproxy.cn/rustup"
 
 # cangjie
-source ~/dev/sdks/cangjie/envsetup.sh
+source ~/develop/sdks/cangjie/envsetup.sh

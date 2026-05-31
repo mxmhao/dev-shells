@@ -8,7 +8,7 @@ formulae=(
 cocoapods
 rustup
 # SOCKS5 代理
-dante
+# dante
 # 多线程下载工具
 # aria2
 # openjdk@21
@@ -18,20 +18,22 @@ dante
 casks=(
 appcleaner
 localsend
-claude-code
 visual-studio-code
 # google-chrome
 iina
-opencode-desktop
+# opencode-desktop
 # android-studio
 # 按键显示
-keycastr
+# keycastr
 # 腾讯柠檬，一款清理软件
-tencent-lemon
+# tencent-lemon
+# 自定义输入法
 # squirrel-app
 # lm-studio
 # 免费 VPN
 # privadovpn
+# 这个最慢，放到最后
+claude-code
 )
 
 proxy_prefix="https://gh.xmly.dev"
