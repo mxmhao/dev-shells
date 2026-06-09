@@ -33,7 +33,7 @@ iina
 # 免费 VPN
 # privadovpn
 # 这个最慢，放到最后
-claude-code
+# claude-code
 )
 
 proxy_prefix="https://gh.xmly.dev"
