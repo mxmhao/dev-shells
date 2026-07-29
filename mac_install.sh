@@ -21,6 +21,8 @@ localsend
 visual-studio-code
 # google-chrome
 iina
+# 虚拟机
+virtualbuddy
 # opencode-desktop
 # android-studio
 # 按键显示
