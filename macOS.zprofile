@@ -30,8 +30,9 @@ DEVELOP=~/develop
 # flutter
 export FLUTTER_HOME=$DEVELOP/sdks/flutter
 export PATH=$PATH:$FLUTTER_HOME/bin
-export PUB_HOSTED_URL=https://pub.flutter-io.cn
-export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
+# pub.dev 很快了，这里不再使用国内镜像
+# export PUB_HOSTED_URL=https://pub.flutter-io.cn
+# export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 
 # rust
 export RUSTUP_DIST_SERVER="https://rsproxy.cn"
